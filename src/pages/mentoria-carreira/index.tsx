@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { CheckCircle2, Clock, Users, Target, MessageSquare, FileText, TrendingUp, Brain, BarChart3, ArrowRight } from "lucide-react";
+import { CheckCircle2, Clock, Users, Target, MessageSquare, FileText, TrendingUp, Brain, BarChart3 } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import { LoadingButton } from "@/components/LoadingButton";
 

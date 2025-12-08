@@ -5,7 +5,6 @@ import anaPeixotoHero1 from "@/assets/ana-carousel-01.png";
 import anaPeixotoHero2 from "@/assets/ana-carousel-02.png";
 import anaPeixotoHero3 from "@/assets/ana-carousel-03.png";
 import anaPeixotoHero4 from "@/assets/ana-carousel-04.png";
-import { ScrollIndicator } from "./ScrollIndicator";
 import { LoadingButton } from "./LoadingButton";
 import { useInView } from "@/hooks/useInView";
 import { ImageCarousel } from "./ImageCarousel";
