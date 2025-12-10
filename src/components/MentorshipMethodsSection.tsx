@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { 
   GraduationCap, 
   TrendingUp, 
-  Package
+  Package,
+  Clock
 } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import { useNavigate } from "react-router-dom";
@@ -16,8 +17,8 @@ export function MentorshipMethodsSection() {
       title: "MÉTODO ASCENSO (NÍVEL INICIAL E INTERMEDIÁRIO DE LIDERANÇA)",
       subtitle: "A transformação: da operação para a liderança com segurança, clareza e presença.",
       description: "O Método ASCENSO desenvolve profissionais que estão prontos para assumir sua primeira posição de liderança. Você aprende a lidar com pessoas, assumir responsabilidades, delegar, comunicar com firmeza e liderar com inteligência emocional — sem perder sua identidade no processo.",
-      transformation: "➡️ De profissional técnico para líder confiável, estruturado e pronto para crescer.",
-      time: "🕒 6 meses",
+      transformation: "De profissional técnico para líder confiável, estruturado e pronto para crescer.",
+      time: "6 meses",
       icon: GraduationCap,
       image: "MÉTODO ASCENSO",
       onClick: () => {
@@ -29,8 +30,8 @@ export function MentorshipMethodsSection() {
       title: "MÉTODO EXECUTIVO ALFA",
       subtitle: "A transformação: da liderança sobrecarregada para a liderança estratégica, consciente e de alto impacto.",
       description: "O Método Executivo ALFA é uma jornada profunda para quem já ocupa cargos de decisão, mas precisa elevar maturidade, expandir visão e liderar com mais estratégia, clareza e propósito. Aqui, o executivo aprende a formar sucessores, sustentar cultura, engajar pessoas e tomar decisões com inteligência emocional e racional.",
-      transformation: "➡️ De gestor experiente para líder estratégico, inspirador e com poder de impacto real.",
-      time: "🕒 12 meses",
+      transformation: "De gestor experiente para líder estratégico, inspirador e com poder de impacto real.",
+      time: "12 meses",
       icon: TrendingUp,
       image: "MÉTODO EXECUTIVO ALFA",
       onClick: () => {
@@ -54,7 +55,7 @@ export function MentorshipMethodsSection() {
 
 
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-br from-background via-background to-secondary/30 py-20 sm:py-24 lg:py-32">
+    <section className="relative w-full overflow-hidden bg-background-secondary py-20 sm:py-24 lg:py-32">
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--gold)/0.05)_0%,transparent_50%)]"></div>
       
@@ -81,11 +82,11 @@ export function MentorshipMethodsSection() {
                   style={{ animationDelay: sectionInView ? `${0.2 + index * 0.1}s` : '0s' }}
                 >
                   <CardContent className="p-0">
-                    <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8 p-6 lg:p-8">
+                    <div className="flex flex-col lg:flex-row items-stretch">
                       {/* Image/Icon Section */}
-                      <div className="relative w-full lg:w-64 h-48 lg:h-48 flex-shrink-0 rounded-lg overflow-hidden bg-gradient-to-br from-secondary/20 to-secondary/10 border border-secondary/20">
+                      <div className="relative w-full lg:w-72 h-48 lg:h-auto flex-shrink-0 bg-gradient-to-br from-secondary/20 to-secondary/10 border-r border-b lg:border-b-0 lg:border-r border-secondary/20">
                         <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center p-4">
+                          <div className="text-center p-4 w-full h-full flex flex-col items-center justify-center">
                             <div className="w-16 h-16 mx-auto mb-3 rounded-full bg-gold/10 flex items-center justify-center">
                               <Icon className="w-8 h-8 text-gold" />
                             </div>
@@ -97,7 +98,7 @@ export function MentorshipMethodsSection() {
                       </div>
 
                       {/* Content Section */}
-                      <div className="flex-1 space-y-4">
+                      <div className="flex-1 p-6 lg:p-8 space-y-4">
                         <div>
                           <h3 className="text-xl sm:text-2xl font-playfair font-bold text-primary mb-2">
                             {method.title}
@@ -112,14 +113,20 @@ export function MentorshipMethodsSection() {
                           {method.description}
                         </p>
                         {method.transformation && (
+                          <div className="flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-gold"></span>
                           <p className="text-base sm:text-lg font-poppins text-primary/90 leading-relaxed font-medium">
                             {method.transformation}
                           </p>
+                          </div>
                         )}
                         {method.time && (
-                          <p className="text-base font-poppins text-primary/80">
+                         <div className="flex items-center gap-2">
+                          <span><Clock className="w-4 h-4 text-gold" /></span>
+                           <p className="text-base font-poppins text-primary/80">
                             Tempo de acompanhamento: {method.time}
                           </p>
+                         </div>
                         )}
                         <div className="pt-2">
                           <Button

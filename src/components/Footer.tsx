@@ -46,7 +46,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative w-full overflow-hidden bg-gradient-to-br from-background-secondary via-background-secondary/95 to-primary/5 border-t-2 border-gold/30 shadow-[0_-4px_30px_-15px_hsl(var(--gold)/0.15)]">
+    <footer className="relative w-full overflow-hidden bg-gradient-to-br from-background via-background to-secondary/30 border-t-2 border-gold/30 shadow-[0_-4px_30px_-15px_hsl(var(--gold)/0.15)]">
       {/* Background decorative elements - mais visíveis */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,hsl(var(--gold)/0.12)_0%,transparent_60%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_100%,hsl(var(--gold)/0.08)_0%,transparent_50%)]"></div>
@@ -74,7 +74,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs font-poppins text-primary/70 bg-gold/5 px-3 py-2 rounded-lg border border-gold/10 w-fit">
               <Sparkles className="w-3.5 h-3.5 text-gold animate-pulse" />
-              <span className="font-semibold">+500 profissionais transformados</span>
+              <span className="font-semibold">+650 executivos e negócios transformados</span>
             </div>
           </div>
 
@@ -120,7 +120,7 @@ export function Footer() {
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-gold/15 to-gold/5 flex items-center justify-center group-hover:from-gold/30 group-hover:to-gold/15 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-gold/20 transition-all duration-300 border border-gold/20 group-hover:border-gold/40">
                   <Phone className="w-5 h-5 text-gold group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <span className="group-hover:translate-x-1 transition-transform duration-300">(11) 99999-9999</span>
+                <span className="group-hover:translate-x-1 transition-transform duration-300">(21) 99999-9999</span>
               </a>
             </div>
           </div>
@@ -158,7 +158,7 @@ export function Footer() {
             <div className="w-full border-t border-gold/20"></div>
           </div>
           <div className="relative flex justify-center">
-            <div className="bg-background-secondary px-4">
+            <div className="px-4">
               <Sparkles className="w-5 h-5 text-gold/40" />
             </div>
           </div>

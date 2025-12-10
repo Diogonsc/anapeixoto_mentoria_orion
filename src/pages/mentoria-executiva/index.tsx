@@ -150,7 +150,7 @@ export default function MentoriaExecutiva() {
               <Card className={`border-gold/30 bg-gradient-to-br from-background to-secondary/10 backdrop-blur-sm shadow-elegant max-w-4xl mx-auto mt-12 animate-on-scroll ${contentInView ? 'animate-fade-in-up animate-delay-400' : ''}`}>
                 <CardContent className="p-8 lg:p-12 text-center">
                   <p className="text-xl sm:text-2xl font-poppins text-primary font-bold leading-relaxed">
-                    ➡️ De líder experiente para executivo estratégico, consciente e com impacto sistêmico.
+                      De líder experiente para executivo estratégico, consciente e com impacto sistêmico.
                   </p>
                 </CardContent>
               </Card>
@@ -302,7 +302,7 @@ export default function MentoriaExecutiva() {
                 onClick={handleWhatsApp}
                 className="text-lg font-inter font-semibold bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant transition-all duration-500 hover:shadow-xl hover:scale-105"
               >
-                ➡️ Quero conhecer o ALFA
+                  Quero conhecer o ALFA
               </LoadingButton>
             </div>
           </div>

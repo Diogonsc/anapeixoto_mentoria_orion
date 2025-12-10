@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import anaPeixotoHero from "@/assets/ana-peixoto-hero.jpg";
+import anaPeixotoHero from "@/assets/imagem1.png";
 import { useInView } from "@/hooks/useInView";
 import { Sparkles } from "lucide-react";
 
@@ -9,7 +9,7 @@ export function AnaPresentationSection() {
   return (
     <section
       id="apresentacao-completa"
-      className="relative w-full overflow-hidden bg-gradient-to-br from-background via-background to-secondary/30 py-20 sm:py-24 lg:py-32"
+      className="relative w-full overflow-hidden bg-background-secondary py-20 sm:py-24 lg:py-32"
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--gold)/0.05)_0%,transparent_50%)]"></div>
@@ -23,7 +23,7 @@ export function AnaPresentationSection() {
           <CardContent className="p-0">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 p-8 lg:p-12">
               {/* Image Section */}
-              <div className="relative w-full lg:w-80 h-96 lg:h-[500px] flex-shrink-0 rounded-xl overflow-hidden shadow-elegant">
+              <div className="relative w-full lg:w-1/3 h-96 lg:h-[auto] flex-shrink-0 rounded-xl overflow-hidden shadow-elegant">
                 <img
                   src={anaPeixotoHero}
                   alt="Ana Peixoto - Educadora Executiva e Mentora de Carreira"

@@ -176,7 +176,7 @@ export default function ProdutoDigital() {
                     Ajudar você a liderar com mais inteligência estratégica, postura emocional e qualidade de comunicação sem depender de força, improviso ou desgaste.
                   </p>
                   <p className="text-xl sm:text-2xl font-poppins text-primary font-bold pt-4 border-t border-gold/20">
-                    ➡️ Transformar sua liderança em decisões claras e conversas maduras, todos os dias.
+                      Transformar sua liderança em decisões claras e conversas maduras, todos os dias.
                   </p>
                 </div>
               </CardContent>
@@ -363,7 +363,7 @@ export default function ProdutoDigital() {
                 onClick={handleWhatsApp}
                 className="text-lg font-inter font-semibold bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant transition-all duration-500 hover:shadow-xl hover:scale-105"
               >
-                ➡️ Quero ter o ORION comigo
+                  Quero ter o ORION comigo
               </LoadingButton>
             </div>
           </div>
